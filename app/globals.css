@@ -1,0 +1,141 @@
+/* app/globals.css */
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #1d4ed8; */
+  --color-bg: #F8F9FA; /* Light mode background */
+  --color-text: #000000; /* Light mode text */
+  --color-border: #e5e7eb; /* Light mode border */
+  --color-primary: #5657FF; /* Light mode primary color */
+  --color-hover: #EEEEFF; /* Light mode hover color */
+  --text-menu-color:#6F757E;
+
+
+  --card-bg:#ffffff;
+  --card-stroke:#ffffff;
+  --menu-item-hover:#ccd9ff;
+
+  --main-stroke:#e9e9e9;
+
+  --text-heading:#050F24;
+  --text-primary:#2D3748;
+  --text-secondary:#6F757E;
+
+  
+  --custom-btn-items-stroke-Inactive:#dddddd;
+  --custome-btn-bg-fill:#e0e7ff; /* for indigobg */
+
+  --scrolbar-thumb-color:#BEBEBE;
+  --scrollbar-track-color:#e7e7e7;
+  --scrolbar-thumb-hover:#BEBEBE;
+
+
+}
+
+[data-theme="dark"] {
+  /* --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --primary-color: #6366f1; */
+  --color-bg: #0A0A0A; /* Dark mode background */
+  --color-text: #ffffff; /* Dark mode text */
+  --color-border: #444444; /* Dark mode border */
+  --color-primary: #5657FF; /* Dark mode primary color */
+  --color-hover: #3b82f6; /* Dark mode hover color */
+  --text-menu-color:#6F757E;
+
+  --card-bg:#101010;
+  --card-stroke:#202020;
+  --menu-item-hover:#171717;
+
+  --main-stroke:#202020;
+
+  --text-heading:#E2E2E2;
+  --text-primary:#D5D5D7;
+  --text-secondary:#6F757E;
+  
+  --custom-btn-items-stroke-Inactive:#202020;
+  --custome-btn-bg-fill:#171717;
+
+  --scrolbar-thumb-color:#383838;
+  --scrollbar-track-color:#171717;
+  --scrolbar-thumb-hover:#2E2E2E;
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--text-menu-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color); 
+  border-radius: 1px;
+  /* border: 1px solid var(--color-border); */
+
+ 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrolbar-thumb-color); 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:var(--scrolbar-thumb-hover); 
+  /* opacity: 0.1 !important;  */
+}
+
+.rotate-360{
+  transform: rotate(360deg);
+  transition: transform 0.8s ease
+}
+
+.rotate-180 {
+  transform: rotate(180deg); /* Rotate 180 degrees */
+  transition: transform 0.4s ease;
+}
+.rotate-360-reverse{
+  transform: rotate(-360deg);
+  transition: transform 0.8s ease
+}
+
+.rotate-180-reverse {
+  transform: rotate(-180deg); /* Rotate 180 degrees */
+  transition: transform 0.4s ease;
+}
+
+
+.rotate-360 {
+  transform: rotate(360deg);
+  transition: transform 0.4s ease;
+}
+
+.sidebar-bg{
+  background-color: var(--card-bg);
+  border: 2px solid var(--btn-items-stroke);
+}
+
+
